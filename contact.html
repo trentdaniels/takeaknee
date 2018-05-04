@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Kneel With Us</title>
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC:900" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div class="wrapper contact-wrapper">
+		<button id="btn-menu" type="button">&#x2630;</button>
+		<nav id="menu">
+			
+			<div class="links">
+				<button id="btn-close">&times;</button>
+				<a href="index.html">Home</a>
+				<a href="about.html">About</a>
+				<a href="clash.html">Clash</a>
+				<a href="contact.html">Contact</a>
+			</div>
+		</nav>
+		<header id="contact">
+			<h1 class="page-title">#do#<br>your<br>part</h1>
+		</header>
+		<section id="upToDate">
+			<h2>up to date</h2>
+			<p>The movement that we stand for requires us to be on top of all current events and occurences. In order to do that, however, we need your help. Join our cause. Receive updates as soon as we know them weekly. That way, we can all keep a united front against oppression.</p>
+			<form id="subscribe-form">
+				<label for="subscribe">Email:</label>
+				<input type="email" id="subscribe-email" name="email"/>
+				<button type="submit">Subscribe</button>
+			</form>
+		</section>
+		
+		<section class="quote-section">
+			<img src="images/quote.png" class="quote-symbol" alt="quote symbol"/>
+			<h2>impact</h2>
+			<p class="quote">Even though the athletes are doing the kneeling, there are still things that YOU can do too.</p>	  
+		</section>
+		<section id="question">
+			<h2>question</h2>
+			<form id="question-form">
+				<label>Name:</label>
+				<input type="text" name="name" />
+				<label>Email:</label>
+				<input type="email" name="email" />
+				<label>Message:</label>
+				<textarea></textarea>
+				<button type="submit">Send Message</button>
+				<button type="reset">Reset</button>
+			</form>
+			<section id="contactIMG">
+				<img src="images/cheerleader.jpg" alt=""/>
+				<p>Do you have a question for us? We’re always here to help inform the public to raise awarenss and promote change.
+Fill out the form below, and we’ll do our best to provide you with our best response</p>
+				<img src="images/hash.png" alt="">
+		</section>
+			
+		</section>
+		<footer>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="clash.html">Clash</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+			<div>&copy;2018 Take A Knee</div>
+		</footer>
+	</div>
+	<script>
+		const subscribeForm = document.querySelector('#subscribe-form');
+		const input = document.getElementById('subscribe-email');
+		subscribeForm.addEventListener('submit', (e) => {
+			e.preventDefault();
+			alert('Thank you for submitting. Check your email!');
+			input.value = '';
+			
+		})
+	
+	</script>
+	<script src="js/menu.js"></script>
+</body>
+</html>
